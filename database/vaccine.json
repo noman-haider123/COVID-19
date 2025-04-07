@@ -1,0 +1,38 @@
+[
+    {
+        "Vaccine_name" : "Covaxin",
+        "Manufacture" :  "2020-08-12",
+        "Expiry_date" : "2023-08-12",
+        "AvailableOrNot" : "Available"
+    },
+    {
+        "Vaccine_name" : "Nuvaxovid",
+        "Manufacture" :  "2021-07-10",
+        "Expiry_date" : "2026-05-07",
+        "AvailableOrNot" : "Not Available"
+    },
+    {
+        "Vaccine_name" : "Covilo",
+        "Manufacture" :  "2022-06-10",
+        "Expiry_date" : "2023-07-9",
+        "AvailableOrNot" : "Available"
+    },
+    {
+        "Vaccine_name" : "Comirnaty",
+        "Manufacture" :  "2021-10-12",
+        "Expiry_date" : "2022-07-10",
+        "AvailableOrNot" : "Not Available"
+    },
+    {
+        "Vaccine_name" : "Covishield",
+        "Manufacture" :  "2021-05-10",
+        "Expiry_date" : "2022-05-10",
+        "AvailableOrNot" : "Available"
+    },
+    {
+        "Vaccine_name" : "Vaxzevria",
+        "Manufacture" :  "2021-05-10",
+        "Expiry_date" : "2022-05-10",
+        "AvailableOrNot" : "Not Available"
+    }
+]

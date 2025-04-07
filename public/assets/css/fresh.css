@@ -1,0 +1,163 @@
+#abc {
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.chart-container {
+  width: 100%;
+  margin: 20px auto;
+  background-color: #f8f9faec;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0);
+  height: 400px;
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9faec;
+  color: #6f7d8c;
+  margin: 0;
+  padding: 0;
+}
+
+.left-sidebar {
+  background-color: #b5c5e4;
+  color: #b5c5e4;
+}
+
+.left-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-sidebar li {
+  padding: 10px;
+}
+
+.left-sidebar a {
+  color: #b5c5e4;
+  text-decoration: none;
+}
+
+.left-sidebar a:hover {
+  color: #b5c5e4;
+}
+
+.left-sidebar ul li:last-child {
+  border-bottom: none;
+}
+
+.left-sidebar ul li a:hover {
+  width: 115%;
+  color: #b5c5e4;
+}
+
+.left-sidebar ul li a {
+  color: #b5c5e4;
+}
+
+.left-sidebar ul li a:active {
+  color: #b5c5e4;
+}
+
+.left-sidebar ul li a:focus {
+  color: #b5c5e4;
+}
+
+.left-sidebar ul li a:visited {
+  color: #b5c5e4;
+}
+
+.app-header {
+  background-color: #b5c5e4;
+  color: #b5c5e4;
+  height: 10%;
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+.table-responsive table {
+  border-collapse: collapse;
+}
+
+.table-responsive table th {
+  background-color: #b5c5e4;
+}
+
+.table-responsive table th,
+.table-responsive table td {
+  border: 1px solid #b5c5e4;
+}
+
+.table-responsive table th,
+.table-responsive table td {
+  padding: 10px;
+}
+
+.table-responsive table th {
+  text-align: center;
+}
+
+.table-responsive table td {
+  text-align: center;
+}
+
+.table-responsive table th,
+.table-responsive table td {
+  font-size: 14px;
+}
+
+.table-responsive table th,
+.table-responsive table td {
+  font-weight: bold;
+}
+
+ul .sidebar-item .hide-menu {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+}
+
+#cross {
+  font-size: 20px;
+  color: black;
+}
+
+#menu {
+  font-size: 20px;
+  color: black;
+}
+
+.report {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#abc {
+  position: relative;
+  top: -15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#toggle {
+  position: relative;
+  top: -15px;
+}
+#totals{
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

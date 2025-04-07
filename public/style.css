@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-image: url('https://media.gettyimages.com/id/1358893154/vector/stop-coronavirus-side-view-of-human-hand-gesturing-stop-to-coronavirus-cells.jpg?s=612x612&w=0&k=20&c=Fwkh0xodBj-Rg4NdUiHTi3vaEMGPy6aVAcNkKsqDxUQ=');
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(1.2);
+}
+
+.bgimg {
+    height: 800px;
+    background-image: url('https://media.gettyimages.com/id/1358893154/vector/stop-coronavirus-side-view-of-human-hand-gesturing-stop-to-coronavirus-cells.jpg?s=612x612&w=0&k=20&c=Fwkh0xodBj-Rg4NdUiHTi3vaEMGPy6aVAcNkKsqDxUQ=');
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(1.2);
+}
+
+.custom-toggler {
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.custom-toggler:hover {
+    transform: scale(1.1);
+    background-color: rgb(196, 153, 235);
+    border: 2px solid black;
+}
+
+.custom-toggler svg {
+    transition: fill 0.3s ease;
+    fill: rgb(164, 71, 250);
+}
+
+.custom-toggler:hover svg {
+    fill: blueviolet;
+    /* Change the color on hover (red for the cancel icon) */
+}
+
+.navbar-brand img {
+    max-width: 200px;
+    height: auto;
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 50px;
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+.nav-item .nav-link {
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-width: 100px;
+    }
+
+    .bgimg {
+        height: 400px;
+    }
+}
+
+.row {
+    position: relative;
+    top: 70px;
+}
+
+.row h3 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.row p {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+/* Add this to your CSS */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
+.bgimg p {
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+.bgimg h3 {
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+#container h1 {
+    font-size: 30px;
+    color: blueviolet;
+    font-weight: bold;
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+#container p {
+    font-size: 20px;
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+.icon-link i {
+    font-size: 40px;
+    color: blueviolet;
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+.icon-link {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+.total-cases {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+.total-cases p {
+    font-size: 50px;
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+.total-cases #case {
+    position: relative;
+    top: -8px;
+    font-size: 13px;
+    color: #cccccc;
+}
+
+.second {
+    float: right;
+    position: relative;
+    top: -130px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+.third {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -200px;
+    margin: 0;
+}
+
+.navbar-toggler span {
+    background-image: url('https://cbx-prod.b-cdn.net/COLOURBOX24092318.jpg?width=800&height=800&quality=70');
+
+}
+
+.icon-link {
+    margin-bottom: 10px;
+    /* Adds spacing between icon and text */
+}
+
+.total-cases #collect {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.total-cases #case-done {
+    position: relative;
+    top: -10px;
+    font-size: 13px;
+    color: #cccccc;
+    left: 10px;
+    font-weight: bold;
+}
+
+#Team {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 100px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    /* Light background for contrast */
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    /* Smooth corners */
+}
+
+.card .card-body {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(136, 136, 237);
+    /* Background color */
+    color: #ffffff;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+    /* Ensures it appears above the social icons */
+}
+
+.card:hover .card-body {
+    transform: translateY(-40px);
+    /* Move up on hover */
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    background-color: rgb(136, 136, 237);
+    /* Matching background color */
+}
+
+.card:hover .social-icon {
+    opacity: 1;
+    /* Show icons on hover */
+    transform: translateY(10px);
+    /* Slide icons up slightly */
+}
+
+.social-icon .btn {
+    color: #2b64e1;
+    /* Initial icon color */
+    font-size: 1.5rem;
+}
+
+.social-icon .btn:hover {
+    color: #1d4ed8;
+    /* Darken icon color on hover */
+}
+
+#temamember {
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer {
+    color: black;
+    padding: 10px;
+    position: relative;
+    top: 200px;
+}
+
+#COVID-19 {
+    position: relative;
+    top: -50px;
+}
+
+#COVID-19 p {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+#COVID-19 h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+#CoronaVirus {
+    position: relative;
+    top: -50px;
+}
+
+#CoronaVirus h5 {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+#CoronaVirus p {
+    position: relative;
+    top: 15px;
+    /* Initial state */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Animation applied */
+    animation-delay: 0.5s;
+    /* Delay for smoother effect */
+}
+
+footer {
+    position: relative;
+    top: 200px;
+    background-color: rgb(136, 136, 237);
+}
+
+.bgimage {
+    height: 450px;
+    background-image: url(background.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(1.2);
+    background-attachment: fixed;
+}
+
+#bar {
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(1.2);
+}
+
+.about-section {
+    padding: 60px 20px;
+}
+
+.team-section {
+    padding: 60px 20px;
+    background-color: #f1f1f1;
+    position: relative;
+    top: 50px;
+}
+
+.mission-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.mission-section h2 {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer .col-md-6 {
+        text-align: center;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#team {
+    position: relative;
+    top: -60px;
+}
