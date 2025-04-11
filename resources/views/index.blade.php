@@ -1,150 +1,282 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>COVID-19-Home</title>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COVID-19 Awareness - Stay Safe, Stay Informed</title>
+  <meta name="description" content="Get the latest information on COVID-19, including symptoms, prevention, and current statistics." />
+  <meta name="author" content="COVID-19 Awareness Team" />
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="covid-19.webp.png" alt="COVID-19 Logo"></a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
-                <!-- SVG cancel icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                </svg>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route("index")}}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route("About")}}">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route("register")}}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route("login")}}">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid bgimg">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-                <h3 class="text-center">Stay Safe</h3>
-                <p class="text-center">COVID-19 is caused by the SARS-CoV-2 virus. COVID-19 can cause mild to severe
-                    respiratory illness, including death. The best preventive measures include getting vaccinated,
-                    wearing a mask during times of high transmission.</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" id="container">
-        <div class="row justify-content-center">
-            <div class="col-md-7">
-                <h1 class="text-center">CoronaVirus Statics</h1>
-                <p class="text-center">A highly contagious respiratory disease caused by the SARS-CoV-2 virus.</p>
-                <div class="icon-link ms-4">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <div class="total-cases">
-                    <p>14,112,077</p>
-                    <p id="case" class="ms-2">Active Cases</p>
-                </div>
-                <div class="second">
-                    <div class="icon-link ms-4">
-                        <i class="fas fa-skull-crossbones"></i>
-                    </div>
-                    <div class="total-cases">
-                        <p>15,115,080</p>
-                        <p id="case" class="ms-2">Total Deaths</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-        <div class="third">
-            <div class="icon-link ms-4">
-                <i class="fas fa-check-circle"></i>
-            </div>
-            <div class="total-cases">
-                <p id="collect" class="ms-4">11,100,077</p>
-                <p id="case-done" class="ms-4">Recoverd Cases</p>
-            </div>
-        </div>
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-virus me-2"></i>
+        COVID-19 Awareness
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route("register") }}">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route("login") }}">Login</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-img overflow-hidden p-5">
-                        <img class="img-fluid w-100" src="corona.jpg" id="kh">
-                    </div>
-                </div>
-                <div class="col-lg-6" id="abc">
-                    <h1 class="display-5 mb-4"
-                        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: blueviolet;">
-                        Prevent from
-                        this Pandemic</h1>
-                    <p class="mb-4" style="font-family: Arial, Helvetica, sans-serif;">Keep a safe distance of a metre
-                        from others.
-                        Carry a sanitiser / wash your hands frequently with water and soap.
-                        Avoid close contact with anyone who is sick or has symptoms. Personal protective equipment, hand
-                        washing, social distancing and self-isolation.Precise prevention and control based on big data.
-                        A successful pandemic response consists of scientific prevention and control as well as precise
-                        measures. Methods like big data should be used to monitor the pandemic and trace its source at a
-                        higher level.</p>
-                </div>
-            </div>
-        </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-white text-center d-flex align-items-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-3">Stay Safe. Stay Informed.</h1>
+      <p class="lead mb-4">Get the latest information about COVID-19 and learn how to protect yourself and your loved ones.</p>
+      <a href="#stats" class="btn btn-light btn-lg px-4 me-md-2">View Statistics</a>
+      <a href="#prevention" class="btn btn-outline-light btn-lg px-4">Learn Prevention</a>
     </div>
-    </div>
-    <footer class="text-white py-5">
-        <div class="container-fluid py-3 my-2">
-            <div class="row justify-content-center">
+  </header>
 
-                <!-- System Information -->
-                <div class="col-12 col-md-6 mb-4 mb-md-0" id="COVID-19">
-                    <h5>COVID-19 Vaccination Management System</h5>
-                    <p class="mt-4">VaxCare HQ. Vaccine management systems are tools for streamlining the vaccine supply
-                        chain, ensuring that vaccines are managed effectively from distribution through to
-                        administration. Central to these systems is the ability to track vaccines, and manage inventory
-                        levels and expiration dates, all on a single platform.</p>
-                </div>
-
-                <!-- Contact Information -->
-                <div class="col-12 col-md-6" id="CoronaVirus">
-                    <h5>Contact Us</h5>
-                    <p>Address: Malir Kalaboard</p>
-                    <p>Contact Number: 0315-2216909</p>
-                    <p>Email Address: <a href="mailto:nomaniqbalhaider@gmail.com"
-                            class="text-white">nomaniqbalhaider@gmail.com</a></p>
-                </div>
-
+  <!-- Stats Section -->
+  <section id="stats" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">COVID-19 Global Statistics</h2>
+      <p class="text-center text-muted mb-5">Latest worldwide figures as of today</p>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center stats-card confirmed">
+            <div class="card-body">
+              <div class="stat-icon mb-2">
+                <i class="fas fa-virus"></i>
+              </div>
+              <h5 class="card-title">Confirmed Cases</h5>
+              <p class="card-text stat-number" id="confirmed-cases">767,535,490</p>
+              <p class="card-text text-muted">Worldwide</p>
             </div>
+          </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+        
+        <div class="col-md-4">
+          <div class="card h-100 text-center stats-card recovered">
+            <div class="card-body">
+              <div class="stat-icon mb-2">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h5 class="card-title">Recovered</h5>
+              <p class="card-text stat-number" id="recovered-cases">740,183,765</p>
+              <p class="card-text text-muted">Worldwide</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 text-center stats-card deaths">
+            <div class="card-body">
+              <div class="stat-icon mb-2">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <h5 class="card-title">Deaths</h5>
+              <p class="card-text stat-number" id="death-cases">6,951,223</p>
+              <p class="card-text text-muted">Worldwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <small class="text-muted">Source: WHO, CDC, and other health organizations. Numbers may vary.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="mb-4">About COVID-19</h2>
+          <p class="lead">Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.</p>
+          <p>Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment. However, some will become seriously ill and require medical attention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Symptoms Section -->
+  <section id="symptoms" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Common Symptoms</h2>
+      
+      <div class="row g-4">
+        <div class="col-md-3 col-6">
+          <div class="symptom-item text-center">
+            <div class="icon-wrapper mb-3">
+              <i class="fas fa-thermometer-half"></i>
+            </div>
+            <h5>Fever</h5>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-6">
+          <div class="symptom-item text-center">
+            <div class="icon-wrapper mb-3">
+              <i class="fas fa-head-side-cough"></i>
+            </div>
+            <h5>Dry Cough</h5>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-6">
+          <div class="symptom-item text-center">
+            <div class="icon-wrapper mb-3">
+              <i class="fas fa-tired"></i>
+            </div>
+            <h5>Fatigue</h5>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-6">
+          <div class="symptom-item text-center">
+            <div class="icon-wrapper mb-3">
+              <i class="fas fa-lungs"></i>
+            </div>
+            <h5>Shortness of Breath</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="alert alert-warning mt-5" role="alert">
+        <div class="d-flex">
+          <div class="me-3">
+            <i class="fas fa-exclamation-triangle fa-2x"></i>
+          </div>
+          <div>
+            <h5>Seek immediate medical attention if you have serious symptoms.</h5>
+            <p class="mb-0">Always call before visiting your doctor or health facility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prevention Section -->
+  <section id="prevention" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Prevention Tips</h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 prevention-card">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <div class="icon-wrapper">
+                  <i class="fas fa-hands-wash"></i>
+                </div>
+              </div>
+              <h5 class="card-title text-center">Wash your hands frequently</h5>
+              <p class="card-text">Regularly and thoroughly clean your hands with soap and water for at least 20 seconds or use an alcohol-based hand rub.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 prevention-card">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <div class="icon-wrapper">
+                  <i class="fas fa-people-arrows"></i>
+                </div>
+              </div>
+              <h5 class="card-title text-center">Maintain social distancing</h5>
+              <p class="card-text">Keep at least 6 feet (about 2 arm's length) distance between yourself and others, particularly those who are coughing or sneezing.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 prevention-card">
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <div class="icon-wrapper">
+                  <i class="fas fa-head-side-mask"></i>
+                </div>
+              </div>
+              <h5 class="card-title text-center">Wear a face mask</h5>
+              <p class="card-text">Cover your nose and mouth with a mask when around others. The mask helps protect those around you in case you are infected.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h5>COVID-19 Awareness</h5>
+          <p>Providing accurate and up-to-date information about the COVID-19 pandemic to help keep you and your loved ones safe.</p>
+        </div>
+        
+        <div class="col-md-3 mb-4 mb-md-0">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+            <li><a class="nav-link" href="{{ route("register") }}">Register</a>
+            <li><a class="nav-link" href="{{ route("login") }}">Login</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-md-3">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="https://pk.linkedin.com/" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          
+          <h5 class="mt-4">Contact</h5>
+          <p class="mb-1"><i class="fas fa-envelope me-2"></i> info@covid19awareness.org</p>
+          <p><i class="fas fa-phone me-2"></i> +1 (123) 456-7890</p>
+        </div>
+      </div>
+      
+      <hr class="my-4">
+      
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 COVID-19 Awareness. Designed and Developed By Noman Haider</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="main.js"></script>
 </body>
-
 </html>

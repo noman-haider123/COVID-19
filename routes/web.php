@@ -79,8 +79,8 @@ Route::middleware('guest')->group(function () {
 Route::get('/',function(){
     return view('index');
 })->name('index');
-Route::get('/About-us',function(){
-    return view('About');
-})->name('About');
+// Route::get('/About-us',function(){
+//     return view('About');
+// })->name('About');
 });
 require __DIR__.'/auth.php';
