@@ -142,6 +142,10 @@
                     {{session('update')}}
                    </div>
                    @endif
+                   @if (session('nofound'))
+                   <div class="alert alert-danger" id="alert">
+                    {{session('nofound')}}
+                   @endif
                   </div>
         </div>
         <script>

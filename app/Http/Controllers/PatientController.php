@@ -182,7 +182,7 @@ class PatientController extends Controller
             ->get();
     
         if ($reports->isEmpty()) {
-            return response()->json(['error' => 'No reports found'], 404);
+            return redirect()->back()->with('nofound', 'No reports found for download.');
         }
     
         $filename = 'Report.csv';
