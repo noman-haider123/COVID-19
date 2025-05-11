@@ -121,8 +121,8 @@ class PatientController extends Controller
     }
     public function dashboard()
     {
-        $booking = booking::count();
-        $report = report::count();
+        $booking = booking::where('User_id', auth("web")->user()->id)->count();
+        $report = report::where('User_id',auth('web')->user()->id)->count();
         $vaccine = vaccine::count();
         return view('dashboard', compact('booking', 'report', 'vaccine'));
     }

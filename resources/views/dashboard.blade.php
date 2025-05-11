@@ -360,10 +360,10 @@
           var covidPieChart = new Chart(ctx, {
               type: 'pie', // Pie chart type
               data: {
-                  labels: ['New Cases', 'Recovered', 'Deaths'], // Labels for the pie chart
+                  labels: ['Bookings','Reports','Vaccines'], // Labels for the pie chart
                   datasets: [{
-                      label: 'COVID-19 Cases',
-                      data: [300, 1500, 200], // Example data
+                      label: 'Hospital Stats',
+                      data: [{{ $booking }},{{ $report }},{{ $vaccine }}], // Example data
                       backgroundColor: [
                           'rgba(255, 99, 132, 0.2)',
                           'rgba(54, 162, 235, 0.2)',
