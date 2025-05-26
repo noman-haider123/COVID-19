@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -49,7 +49,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero-section text-white text-center d-flex align-items-center">
+  <header class="hero-section text-white text-center d-flex align-items-center" id="home">
     <div class="container">
       <h1 class="display-3 fw-bold mb-3">Stay Safe. Stay Informed.</h1>
       <p class="lead mb-4">Get the latest information about COVID-19 and learn how to protect yourself and your loved ones.</p>
@@ -244,7 +244,7 @@
         <div class="col-md-3 mb-4 mb-md-0">
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
             <li><a href="#about" class="text-white text-decoration-none">About</a></li>
             <li><a class="nav-link" href="{{ route("register") }}">Register</a>
             <li><a class="nav-link" href="{{ route("login") }}">Login</a>
